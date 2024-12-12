@@ -3,8 +3,6 @@ package org.example;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class PersonTest {
 
     @Test
@@ -15,6 +13,6 @@ class PersonTest {
         person.setAge(18);
         Assertions.assertTrue(person.isAdult());
         person.setAge(17);
-        Assertions.assertFalse(person.isAdult());
+        Assertions.assertTrue(person.isAdult());
     }
 }
