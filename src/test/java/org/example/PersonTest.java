@@ -13,6 +13,6 @@ class PersonTest {
         person.setAge(18);
         Assertions.assertTrue(person.isAdult());
         person.setAge(17);
-        Assertions.assertTrue(person.isAdult());
+        Assertions.assertFalse(person.isAdult());
     }
 }
